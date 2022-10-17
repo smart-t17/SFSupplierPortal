@@ -1,0 +1,48 @@
+.main-content {
+  .adm-cust-attendees-div {
+    .adm-cust-attendees-main {
+      .datatable .VueTables__search-field { width: 40%; }
+      .datatable .datatable-filter-div { width: 60%; }
+      .datatable .datatable-filter-div .datatable-action-btn { margin-left: 0; padding: 6px 15px; }
+      .datatable .VueTables .row:first-child, .datatable .VueTables .table-responsive {
+        padding: 0;
+      }
+      .VueTables__search {
+        margin-bottom: 35px;
+      }
+
+      @media (min-width: 1200px) {
+        padding: $adm-prospace-sublist-spacing;
+      }
+      .brown-heading-cl {
+        background-color: $themecolor;
+        color: $white;
+      }
+      .VueTables__table {
+        width: 100%;
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            border-bottom: none;
+            &:nth-of-type(even) {
+              background-color: #f1f0ee;
+            }
+            td {
+              font-size: 14px;
+              &:nth-child(1) {     width: 5%; }
+              &:nth-child(2) {     width: 12%; }
+              &:nth-child(3) {     width: 13%; }
+              &:nth-child(4) {     width: 13%; }
+              &:nth-child(5) {     width: 20%; }
+              &:nth-child(6) {     width: 32%; }
+              &:nth-child(7) {     width: 5%; }
+              &:first-child {
+                font-family: VisbyCF-Medium
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

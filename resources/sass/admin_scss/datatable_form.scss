@@ -1,0 +1,98 @@
+.main-content {
+  .adm-send-notifcn-div {
+    .adm-send-notifcn-main {
+      .datatable .VueTables__search-field {
+        width: 40%;
+      }
+      .datatable .datatable-filter-div {
+        width: 60%;
+      }
+      .datatable .datatable-filter-div .datatable-action-btn {
+        margin-left: 0;
+        padding: 6px 15px;
+      }
+      .datatable .VueTables .row:first-child, .datatable .VueTables .table-responsive {
+        padding: 0;
+      }
+      .checkbox-container .checkmark {
+        height: 15px;
+        width: 15px;
+        border: 1px solid #989c9e;
+      }
+      .VueTables__search {
+        margin-bottom: 35px;
+      }
+
+      #datatable {
+        @media (max-width: 1200px) {
+          padding: 0 0 40px 0;
+        }
+        @media (min-width: 1200px) {
+          padding: $send-notifcn-spacing-left;
+        }
+      }
+      .dark-grey-bg {
+        background: #d8d6ce;
+      }
+      .right-bar {
+        @media (max-width: 1200px) {
+          padding: 40px 0;
+        }
+        @media (min-width: 1200px) {
+          padding: $send-notifcn-spacing-right;
+        }
+
+      }
+
+      .brown-heading-cl {
+        background-color: $themecolor;
+        color: $white;
+      }
+      @media (min-width: 1200px) {
+        .datatable .table-responsive {
+          margin-bottom: 190px;
+        }
+      }
+
+      .VueTables__table {
+        width: 100%;
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            border-bottom: none;
+            &:nth-of-type(even) {
+              background-color: #f1f0ee;
+            }
+            td {
+              font-size: 14px;
+              &:nth-child(1) {
+                width: 3%;
+              }
+              &:nth-child(2) {
+                width: 3%;
+              }
+              &:nth-child(3) {
+                width: 17%;
+              }
+              &:nth-child(4) {
+                width: 17%;
+              }
+              &:nth-child(5) {
+                width: 17%;
+              }
+              &:nth-child(6) {
+                width: 20%;
+              }
+              &:nth-child(7) {
+                width: 23%;
+              }
+              &:first-child {
+                font-family: VisbyCF-Medium
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

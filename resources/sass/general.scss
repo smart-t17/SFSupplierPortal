@@ -1,0 +1,40 @@
+.img-responsive {
+  max-width: 100%;
+}
+
+.main-content {
+  padding-top: 60px;
+  clear: both;
+}
+
+.gray-bg {
+  background: $gray-color !important;
+}
+
+.main-div {
+  @media(max-width: 1199px) {
+    padding: 40px 0;
+  }
+}
+
+/* Button Error */
+.button-error {
+  color: #ea6978;
+}
+
+@media (max-width: 767px) {
+  .xs-table-scroll {
+    overflow: auto;
+  }
+}
+
+/* Admin Form Spacing */
+.adm-form-spacing {
+  @media (min-width: 1200px) {
+    padding: $adm-form-spacing;
+  }
+}
+
+footer, .landing-div {
+  background-color: #fff;
+}

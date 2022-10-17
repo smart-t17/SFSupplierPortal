@@ -1,0 +1,82 @@
+.permission-div {
+  .permission-main {
+
+    .permission-header {  color: #fff; text-transform: uppercase; font-family: VisbyCF-Bold; background: #4d4439; color: #fff; }
+    .permission-header { padding: 10px 5px; }
+    .permission-item { margin-bottom: 30px; }
+    .checkbox-container  {    float: right; margin-top: 3px;  }
+    @media(min-width: 1200px) {
+      padding: $permission-spacing;
+    }
+    .vc-collapse.active .v-collapse-toggler:after {
+      content: '\f106';
+    }
+    .v-collapse-toggler { position: relative; padding: 10px 5px; }
+    .v-collapse-toggler:after {
+      content: '\f107';
+      color: #63656a;
+      font-weight: bold;
+      float: right;
+      position: absolute;
+      right: 32px;
+      margin-left: -10px;
+      font-family: FontAwesome;
+      font-size: 25px;
+      line-height: normal;
+    }
+
+    .v-collapse-content {
+      max-height: 0;
+      transition: max-height 1.2s ease-out;
+      overflow: hidden;
+      padding: 0;
+      .collapse-data {
+        padding: 0px 5px 20px 5px;
+        .row { margin-top: 5px !important; }
+        .row:first-child { margin-top: 0px !important; }
+      }
+    }
+    .v-collapse-content-end {
+      transition: max-height 1.2s ease-in;
+      max-height: 2000px;
+      width: 100%;
+    }
+
+  }
+
+  .accordian-div {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: 0;
+    }
+    .accordion-title {
+      font-size: 18px;
+      cursor: pointer;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      @media (max-width: 767px) {
+        display: inline;
+        font-size: 15px;
+      }
+    }
+    .checkbox-container {
+      margin-bottom: 15px;
+    }
+  }
+
+  .accordian-div4 hr {
+    border-top: 2px solid #c8c3bf;
+  }
+  hr {
+    margin: 0;
+    border-top: 2px solid #4d443917;
+  }
+
+  .accordian-div4 .nutritional-extra .input-label label {
+    @media (min-width: 1200px) and (max-width: 1760px) {
+      height: 42px;
+    }
+  }
+}
+
+

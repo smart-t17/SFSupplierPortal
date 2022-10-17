@@ -1,0 +1,74 @@
+/* Title */
+.page-title {
+  color: #fff;
+  text-transform: uppercase;
+  @media(min-width: 992px) {
+    padding: 6px 8px 8px 70px;
+  }
+  @media(max-width: 992px) {
+    padding: 8px 15px;
+  }
+  span {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 600;
+    display: inline-block;
+    font-family: VisbyCF-Bold;
+    //margin-left: 5px;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+    a{
+      color: #fff;
+      &:hover { color: #fff; }
+    }
+  }
+
+}
+
+.green-title-bg {
+  background: $green-theme;
+}
+
+.brown-title-bg {
+  background: $contact-theme;
+}
+
+.darkgreen-title-bg {
+  background: $pricing-theme;
+}
+
+.pink-title-bg {
+  background: $pink-theme;
+}
+
+.sky-title-bg {
+  background: $sky-theme;
+}
+
+.orange-title-bg {
+  background: $orange-theme;
+}
+
+.yellow-title-bg {
+  background: $yellow-theme;
+}
+
+.purple-title-bg {
+  background: $purple-theme;
+}
+
+.submission-title-bg {
+  background: $submission-theme;
+}
+
+.draft-title-bg {
+  background: $draft-theme;
+}
+
+.presentation-title-bg {
+  background: $product-presentation-theme;
+}
+
+/* Title End */
+

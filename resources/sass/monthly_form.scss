@@ -1,0 +1,63 @@
+.monthlyform-div {
+  .monthlyform-main1 {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $monthlyform-spacing1;
+    }
+  }
+
+  .monthlyform-main2 {
+    background: #fff;
+    @media(min-width: 1200px) {
+      padding: $monthlyform-spacing2;
+    }
+    .monthlyform-box {
+      //width: 5%;
+      padding-right: 8px;
+      .input-label, .dropdwn-label {
+        font-size: 12px;
+      }
+      .v-select .dropdown-toggle .vs__selected-options, .input-textbox {
+        background-color: #ebeef0;
+        font-size: 13px;
+      }
+      .dropdwn-label, .input-label {
+        @media (min-width: 768px) and (max-width: 1900px) {
+          height: 40px;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100% !important;
+        padding: 15px;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 50% !important;
+        padding: 15px;
+      }
+    }
+    .box1, .box6, .box8 {
+      width: 7%;
+    }
+    .box2, .box3, .box5 {
+      width: 10%;;
+    }
+    .box4 {
+      width: 23%;
+      @media (min-width: 1800px) {
+        width: 25%;
+      }
+    }
+    .box7, .box9, .box10, .box11 {
+      width: 5%;
+    }
+    .box12, .box13 {
+      width: 3%;
+      @media (min-width: 1600px) and (max-width: 1800px){
+        width: 2.3%;
+      }
+      @media (min-width: 1800px) {
+        width: 2%;
+      }
+    }
+  }
+}

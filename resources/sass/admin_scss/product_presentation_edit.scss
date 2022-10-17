@@ -1,0 +1,23 @@
+.main-content {
+  .product-presentation-edit-div {
+    .input-label label, .dropdwn-label label {
+      text-transform: none;
+      font-size: 13px;
+    }
+
+    .product-presentation-edit-main1 {
+    }
+
+    .product-presentation-edit-main2 {
+      @media(min-width: 1200px) {
+        padding: $product-presentation-edit-spacing2;
+      }
+
+      .box4 {
+        width: 28%;
+      }
+    }
+  }
+}
+
+

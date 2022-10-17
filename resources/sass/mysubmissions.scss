@@ -1,0 +1,30 @@
+.mysubmissions-div {
+  .mysubmissions-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $mysubmissions-spacing;
+    }
+
+    .datatable .action-btn .fa-plus {
+      color: #fff;
+    }
+
+    #datatable .file-attachement .fa-plus {
+      font-size: 14px !important;
+    }
+    .datatable {
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: transparent;
+      }
+      .VueTables__table tr td:nth-child(1) {
+        width: 65%
+      }
+      .VueTables__table tr td:nth-child(2) {
+        width: 20%
+      }
+      .VueTables__table tr td:nth-child(3) {
+        width: 15%
+      }
+    }
+  }
+}

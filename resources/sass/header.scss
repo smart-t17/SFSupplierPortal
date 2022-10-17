@@ -1,0 +1,481 @@
+@import 'menu.scss';
+
+.main-container{
+  .container-fluid{ padding: 0; }
+
+  /* Hamburger Menu */
+  .main-navbar {
+    background: $themecolor;
+    border: none;
+    height: 60px;
+    padding: 12px 0;
+    #navbar__hamburger-button {
+      float: left;
+      width: 60px;
+      height: 45px;
+      position: relative;
+      //margin: 12.5px auto;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      margin-top: 2px;
+      z-index: 9999;
+      //height: 100vh;
+
+      span.dash {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 50px;
+        background: #fff;
+        border-radius: 0;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        &:nth-child(1){
+          top: 20px;
+        }
+        &:nth-child(2){
+          top: 10px;
+        }
+        &:nth-child(3){
+          top: 10px;
+        }
+      }
+
+      .menu-toggle-btn{
+        height: 32px;
+        width: 100%;
+        -webkit-appearance: none;
+        background: none;
+        box-shadow: none;
+        border: none;
+        &:focus {
+          outline: 0;
+          outline: none;
+          border: none;
+        }
+      }
+
+    }
+  }
+  /* Hamburger Menu End */
+  /* Logo */
+  .service-food-logo {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 600;
+    display: inline-block;
+    font-family: VisbyCF-ExtraBold;
+    margin-left: 55px;
+    a{ color: #fff; &:hover { color: #fff; }}
+    .display-block {
+      display: block;
+    }
+  }
+  /* Logo End */
+
+  .notifications{
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    margin: 0 8px;
+    .count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      height: 15px;
+      width: 15px;
+      overflow: hidden;
+      background: #f37451;
+      color: #FFF;
+      text-align: center;
+      border-radius: 100%;
+      font-size: 9px;
+      font-weight: bold;
+      line-height: 15px;
+    }
+    .bell-icon {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  .user-drpdwn {
+    margin: 0 8px;
+    .dropdown-toggle {
+      cursor: pointer;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      font-size: 18px;
+      font-family: VisbyCF-Bold;
+      letter-spacing: 1px;
+      color: #fff;
+      &:focus{
+        outline:none;
+      }
+    }
+    .dropdown-menu.show {
+      top: 13px !important;
+      left: 5px !important;
+      min-width: 14.7rem;
+      text-transform: uppercase;
+      background: #4d453b;
+      color: #fff;
+      padding: 0;
+      border-radius: 0;
+      .dropdown-item{
+        cursor: pointer;
+        padding: 0.4rem 1.5rem;
+        color: #fff !important;
+        border-bottom: 1px solid #6a6968 !important;
+        &:nth-child(1), &:nth-child(2) {
+          font-size: 14px;
+        }
+        &:nth-child(3) {
+          font-family: VisbyCF-ExtraBold;
+        }
+        &:hover { background-color: transparent; }
+      }
+    }
+  }
+
+}
+
+.header1 {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: $themecolor;
+  position: fixed;
+  height: 60px !important;
+  //overflow: hidden;
+  z-index: 10;
+  input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+  }
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 5px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -3px;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+    left: 15px;
+    height: 32px;
+    width: 43px;
+    padding-top: 14px;
+    .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+    }
+    .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 3px;
+    }
+    .diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+    }
+    .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 6px;
+    }
+  }
+  #sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 320px;
+    margin-top: 0px;
+    transform: translateX(-320px);
+    transition: transform 320ms ease-in-out;
+    background: #4f473c;
+    z-index: 999;
+    .sidebarMenuInner {
+      margin: 0;
+      padding: 0;
+      //margin: 15px 0;
+      .monthly-item {
+        &:hover {
+          background: $green-theme;
+          .submenu {
+            background: $green-theme;
+          }
+        }
+      }
+      .trade-item {
+        &:hover {
+          background: $pink-theme;
+          .submenu {
+            background: $pink-theme;
+          }
+        }
+      }
+      .annual-item {
+        &:hover {
+          background: $sky-theme;
+          .submenu {
+            background: $sky-theme;
+          }
+        }
+      }
+      .scan-item {
+        &:hover {
+          background: $orange-theme;
+          .submenu {
+            background: $orange-theme;
+          }
+        }
+      }
+
+      .presentation-item {
+        &:hover {
+          background: $product-presentation-theme;
+
+          .submenu {
+            background: $product-presentation-theme;
+          }
+        }
+      }
+
+      .newproduct-item {
+        &:hover {
+          background: $yellow-theme;
+          .submenu {
+            background: $yellow-theme;
+          }
+        }
+      }
+      .myproducts-item {
+        &:hover {
+          background: $purple-theme;
+          .submenu {
+            background: $purple-theme;
+          }
+        }
+      }
+      > li {
+        list-style: none;
+        color: #fffefb;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 18px 12px 18px 20px;
+        cursor: pointer;
+        padding-left: 55px;
+        position: relative;
+        font-size: 15px;
+        &:before {
+          content: "";
+          margin-top: -2px;
+          position: absolute;
+          left: 20px;
+          top: 53%;
+          width: 25px;
+          height: 2px;
+          background-color: $white;
+        }
+        > a {
+          //color: #fff;
+          color: #fffefb;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          text-decoration: none;
+          font-family: VisbyCF-ExtraBold;
+        }
+        .submenu {
+          position: fixed;
+          width: 300px;
+          top: 0;
+          left: 320px;
+          //background-color: $themecolor;
+          height: 100vw;
+          opacity: 0;
+          visibility: hidden;
+          //transition: 100ms opacity 100ms, 100ms visibility 100ms;
+          padding: 10px 0;
+          .heading {
+            a {
+              font-family: VisbyCF-ExtraBold;
+            }
+          }
+          li > a {
+            font-family: VisbyCF-DemiBold;
+          }
+          .list-group-item {
+            background-color: transparent;
+            border: none;
+            padding: 8px 10px;
+            a {
+              color: #fff;
+            }
+          }
+        }
+        &:hover {
+          .submenu {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      .panel-title {
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 18px 8px 18px 20px;
+        cursor: pointer;
+        padding-left: 55px;
+        position: relative;
+        font-size: 14px;
+        font-family: VisbyCF-ExtraBold;
+        a {
+          color: #fff;
+        }
+        .more-less {
+          font-style: normal;
+          &:before {
+            position: absolute;
+            color: #fff;
+            right: 15px;
+            font-family: FontAwesome;
+            content: "\f068";
+          }
+        }
+        .collapsed {
+          .more-less {
+            &:before {
+              content: "\f067";
+            }
+          }
+
+        }
+
+        &:before {
+          content: "";
+          margin-top: -2px;
+          position: absolute;
+          left: 20px;
+          top: 53%;
+          width: 25px;
+          height: 2px;
+          background-color: #fff;
+        }
+      }
+      .panel-body {
+        .list-group-item {
+          background-color: transparent;
+          border: none;
+          padding: 8px 10px;
+          font-family: VisbyCF-DemiBold;
+          font-size: 15px;
+          a {
+            color: #fff;
+          }
+        }
+        .submenu {
+          padding: 10px 0;
+        }
+      }
+      .monthly-item {
+        .submenu {
+          background: $green-theme;
+        }
+      }
+      .trade-item {
+        .submenu {
+          background: $pink-theme;
+        }
+      }
+      .annual-item {
+        .submenu {
+          background: $sky-theme;
+        }
+      }
+      .scan-item {
+        .submenu {
+          background: $orange-theme;
+        }
+      }
+
+      .presentation-item {
+        .submenu {
+          background: $product-presentation-theme;
+        }
+      }
+
+      .newproduct-item {
+        .submenu {
+          background: $yellow-theme;
+        }
+      }
+      .myproducts-item {
+        .submenu {
+          background: $purple-theme;
+        }
+      }
+    }
+    /* Mobile Menu */
+
+  }
+
+  .menu-notification {
+    color: #f37451;
+  }
+}
+
+

@@ -1,0 +1,67 @@
+.tradeshowform-div {
+  .tradeshowform-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $tradeshowform-spacing;
+    }
+    @media(min-width: 1200px) and (max-width: 1400px) {
+      padding: 80px 6%;
+    }
+    .w80 {
+      width: 80%
+    }
+    .w20 {
+      width: 20%
+    }
+    .file-attachement .fa-plus {
+      padding: 10px;
+    }
+    .tradeshowform-table {
+      .text-input-main {
+        display: inline-block;
+        @media (min-width: 1200px) and (max-width: 1700px) {
+          width: 68%;
+        }
+
+        .input-textbox {
+          height: 28px !important;
+        }
+      }
+
+      .td-form-counter img {
+        height: 20px;
+        margin-top: -5px;
+      }
+      width: 100%;
+      tbody {
+        td {
+          padding: 5px;
+          &:first-child, &:nth-child(2), &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 25%;
+          }
+          &:nth-child(5) {
+            width: 10%;
+          }
+          &:nth-child(6) {
+            width: 20%;
+          }
+        }
+      }
+      .checkbox-container {
+        font-size: 15px;
+        margin: 0;
+      }
+      .pink-dynamic-cl {
+        td {
+          padding: 8px 5px;
+        }
+        .checkbox-container {
+          color: #f04f74;
+        }
+      }
+    }
+  }
+}

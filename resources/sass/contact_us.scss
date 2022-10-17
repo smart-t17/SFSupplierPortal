@@ -1,0 +1,52 @@
+.main-content {
+  .contact-div {
+    .contact-main {
+      background-color: $gray-color;
+      @media (min-width: 1200px) {
+        padding: $content-spacing;
+      }
+      .contact-area-block {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-family: VisbyCF-DemiBold;
+        line-height: 1.4;
+        a {
+          color: #333;
+          word-break: break-all;
+        }
+        h6 {
+          margin-bottom: 5px;
+          font-size: 16px;
+          font-family: VisbyCF-Heavy;
+          text-transform: uppercase;
+        }
+        .contact-name {
+          color: #886416;
+          font-family: VisbyCF-Medium;
+        }
+      }
+      .contact-dashline {
+        position: relative;
+        padding-left: 40px;
+      }
+      .contact-content-listing ul li:before,
+      .contact-dashline:before,
+      .contact2 .title-dashline:before,
+      .contact3 .title-dashline:before {
+        background-color: #232323;
+      }
+      .contact-dashline:before {
+        content: '';
+        margin-top: -2px;
+        position: absolute;
+        left: 4px;
+        top: 60%;
+        width: 25px;
+        height: 2px;
+      }
+
+
+    }
+
+  }
+}

@@ -1,0 +1,74 @@
+#adm-header {
+  #sidebarMenu .sidebarMenuInner > li .submenu { position: absolute; top: 0; height: auto; }
+  #sidebarMenu .sidebarMenuInner > li .submenu h5 {
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: VisbyCF-Bold;
+    a{
+      color: #fff;
+    }
+  }
+  #sidebarMenu .sidebarMenuInner > li .submenu ul { list-style-type: none; padding-left: 10px; }
+  #sidebarMenu .sidebarMenuInner > li .submenu ul li {  padding: 5px 0; }
+  #sidebarMenu .sidebarMenuInner > li .submenu ul li a { color: #fff; font-family: VisbyCF-Light  }
+  #sidebarMenu .sidebarMenuInner > li .submenu .fa-plus { font-size: 13px; margin-left:5px; }
+  #sidebarMenu .monthly-item .submenu { width: 850px;padding: 60px 15px 22px 0; }
+  #sidebarMenu .trade-item .submenu { width: 900px;padding: 90px 15px 22px 0; top: -60px !important; }
+  #sidebarMenu .annual-item .submenu { width: 750px;padding: 90px 15px 22px 0; bottom: 0px !important;  top: -120px !important; }
+  #sidebarMenu .scan-item .submenu { width: 750px;padding: 90px 15px 22px 0; bottom: -60px !important; top: -180px !important; }
+
+
+  #sidebarMenu .sidebarMenuInner .product-presentation-item:hover {
+    background: $product-presentation-theme;
+  }
+
+  #sidebarMenu .product-presentation-item .submenu {
+    width: 750px;
+    padding: 90px 15px 22px 0;
+    bottom: 0px !important;
+    top: -240px !important;
+    background: $product-presentation-theme;
+  }
+
+  #sidebarMenu .newproduct-item .submenu {
+    width: 750px;
+    padding: 90px 15px 22px 0;
+    bottom: 0px !important;
+    top: -300px !important;
+  }
+
+
+  #sidebarMenu .myproducts-item .submenu {
+    width: 750px;
+    padding: 90px 15px 22px 0;
+    bottom: 0px !important;
+    top: -360px !important;
+  }
+
+  #sidebarMenu .sidebarMenuInner .vendors-item:hover  {  background: $vendor-theme; }
+
+  #sidebarMenu .vendors-item .submenu {
+    width: 750px;
+    padding: 90px 15px 22px 0;
+    bottom: 0px !important;
+    top: -420px !important;
+    background: $vendor-theme;
+  }
+  #sidebarMenu .sidebarMenuInner .notification-item:hover  {  background: $notification-theme; }
+
+  #sidebarMenu .notification-item .submenu {
+    width: 750px;
+    padding: 90px 15px 22px 0;
+    bottom: 0px !important;
+    top: -480px !important;
+    background: $notification-theme;
+  }
+  #sidebarMenu .sidebarMenuInner .users-item:hover  {  background: $green-theme; }
+  #sidebarMenu .users-item .submenu { width: 750px;padding: 90px 15px 22px 0; bottom: 0px !important; top: -480px !important; background: $green-theme; }
+
+  .title-case {
+    text-transform: capitalize;
+  }
+}

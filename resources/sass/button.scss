@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  clear: both;
+  padding: 7px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  color: #fff !important;
+  background: $themecolor;
+  border-radius: 0;
+  font-family: VisbyCF-Bold;
+  cursor: pointer;
+  @media (min-width: 1200px) {
+    padding: 7px 30px;
+  }
+}
+
+.btn.green-bg {
+  background: $green-theme;
+}
+
+.btn.orange-bg {
+  background: $orange-theme;
+}
+
+.file-attachement {
+  //width: 10%;
+  display: inline-block;
+  background: #4d4439;
+  float: right;
+  color: #fff;
+  .fa-paperclip, .fa-times {
+    padding: 7px;
+    font-size: 18px;
+  }
+  .fa-plus {
+    padding: 9px;
+  }
+  .fa-times {
+    background: #f37451;
+  }
+}

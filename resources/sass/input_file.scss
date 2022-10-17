@@ -1,0 +1,27 @@
+.file-input {
+  ::-webkit-file-upload-button {
+    -webkit-appearance: unset;
+    opacity: 0;
+  }
+  input[type=file] {
+    color: transparent !important;
+  }
+  .input-textbox-div {
+    position: relative;
+    .file-attachement {
+      position: absolute;
+      top: 0;
+      right: 0;
+      .fa-paperclip {
+        font-size: 24px;
+      }
+    }
+  }
+  .small-file-txt {
+    color: #827878;
+    font-size: 12px;
+    line-height: normal;
+    margin-top: 5px;
+    font-family: VisbyCF-Bold;
+  }
+}

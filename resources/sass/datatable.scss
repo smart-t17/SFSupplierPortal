@@ -1,0 +1,248 @@
+.datatable {
+  .VueTables__search-field, .VueTables__limit-field {
+    label {
+      display: none;
+    }
+  }
+  .VueTables__search {
+    width: 100%;
+  }
+  .VueTables__search-field {
+    position: relative;
+    width: 50%;
+    &:before {
+      font-family: FontAwesome;
+      position: absolute;
+      top: 6px;
+      left: 10px;
+      content: "\F002";
+      color: #a4a6a7;
+    }
+    input[type="text"] {
+      width: 85%;
+      padding-left: 35px;
+      border-radius: 0;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+      border: none;
+      &:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+      }
+      &::placeholder {
+        font-family: visbyCF-DemiBold;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 100% !important;
+    }
+  }
+
+  .VueTables__table {
+    thead {
+      background: #4d4439;
+      color: #fff;
+    }
+    th {
+      padding: 10px 5px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+    th, td {
+      border: none;
+    }
+    tbody tr {
+      border-bottom: 2px solid #efefed;
+    }
+    th td {
+      font-family: visbyCF-Bold;
+    }
+    tr td {
+      padding: 10px 5px;
+      font-size: 14px;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+    tr td:nth-child(1) {
+      font-family: VisbyCF-DemiBold;
+    }
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: transparent;
+  }
+  .VueTables__sortable .glyphicon {
+    color: #7a7c7f;
+  }
+  .VueTables__sortable .float-right {
+    float: none !important;
+    padding-left: 20px;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+  .form-control:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .page-item.active .page-link {
+    font-family: VisbyCF-ExtraBold;
+    color: $themecolor;
+    background-color: transparent;
+    border-color: transparent
+  }
+  .page-item .page-link, .page-item.disabled .page-link {
+    background-color: transparent;
+    color: #6c757d;
+    border-color: transparent;
+    padding: 7px;
+    padding-top: 0px;
+  }
+  .page-link:focus {
+    box-shadow: none;
+  }
+
+  .table-responsive {
+    @media (min-width: 1200px) {
+      margin-bottom: 150px;
+    }
+    .small-icon-block {
+      display: inline-block;
+      .file-attachement {
+        float: none;
+        margin-left: 12px;
+        > i {
+          padding: 4px;
+        }
+      }
+    }
+  }
+
+  .VueTables {
+    .VuePagination {
+      font-size: 14px;
+      justify-content: flex-end !important;
+      .text-center {
+        text-align: right !important;
+        color: #6c757d;
+      }
+      .pagination {
+        padding-left: 65px;
+        margin-bottom: 0;
+        float: right;
+        font-family: VisbyCF-Bold;
+      }
+    }
+    .row:first-child, .table-responsive {
+      padding: 0 10%;
+    }
+  }
+  .datatable_limit {
+    margin-bottom: 0;
+    font-family: VisbyCF-Bold;
+    ul {
+      margin-bottom: 0;
+      list-style-type: none;
+      background: transparent;
+      border: none;
+      padding-right: 82px;
+      font-size: 14px;
+      padding-bottom: 0;
+      color: #6c757d;
+      position: relative;
+      li {
+        display: inline-block;
+        margin-left: 12px;
+        &.active {
+          a {
+            color: $themecolor;
+          }
+        }
+        cursor: pointer;
+      }
+      &:before {
+        content: 'Show';
+        position: absolute;
+        top: 5px;
+        left: -32px;
+      }
+      &:after {
+        content: 'rows';
+        position: absolute;
+        top: 5px;
+        right: 37px;
+      }
+    }
+
+  }
+  .VuePagination__count {
+    display: none
+  }
+  .datatable-filter-div {
+    float: right;
+    width: 50%;
+    .datatable-action-btn {
+      cursor: pointer;
+      background: #fff;
+      float: right;
+      padding: 6px 22px;
+      color: #6c757d;
+      font-family: visbyCF-DemiBold;
+      font-size: 15px;
+      margin-left: 15px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+      a {
+        cursor: pointer;
+        color: #6c757d;
+      }
+      label {
+        display: inline-block;
+        cursor: pointer;
+        @media (max-width: 767px) {
+          margin-bottom: 0;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 15px;
+        padding: 6px 22px 6px 22px;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        float: left;
+        margin-top: 15px;
+        &:nth-child(1) {  margin-left: 0 !important; }
+      }
+    }
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 100% !important;
+    }
+  }
+  .action-btn .fa {
+    font-size: 18px;
+    color: #212529;
+  }
+}
+
+#datatable {
+  @media (max-width: 767px) {
+    overflow: auto;
+  }
+  .file-attachement .fa-plus {
+    font-size: 16px !important;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent;
+  }
+}
+

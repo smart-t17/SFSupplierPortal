@@ -1,0 +1,40 @@
+.tradeshow-customers-div {
+  .tradeshow-customers-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $tradeshow-customers-spacing;
+    }
+    .datatable .VueTables .row:first-child, .datatable .VueTables .table-responsive {
+      padding: 0 4%;
+    }
+    .datatable {
+      .table-hover tbody tr:hover {
+        background-color: transparent;
+      }
+      .table-striped tbody tr:nth-of-type(even) {
+        background-color: #f1f0ee;
+      }
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: transparent;
+      }
+      .VueTables__table tr td:nth-child(1) {
+        width: 20%
+      }
+      .VueTables__table tr td:nth-child(2) {
+        width: 18%
+      }
+      .VueTables__table tr td:nth-child(3) {
+        width: 17%
+      }
+      .VueTables__table tr td:nth-child(4) {
+        width: 10%
+      }
+      .VueTables__table tr td:nth-child(5) {
+        width: 25%
+      }
+      .VueTables__table tr td:nth-child(6) {
+        width: 10%
+      }
+    }
+  }
+}

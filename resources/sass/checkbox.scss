@@ -1,0 +1,39 @@
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13.5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: VisbyCF-ExtraBold;
+  .small-txt {
+    color: #5959589e;
+    font-size: 11px;
+    font-style: italic;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid $themecolor;
+  }
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: $themecolor;
+}

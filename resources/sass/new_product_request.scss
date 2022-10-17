@@ -1,0 +1,86 @@
+.newproductreq-div {
+  .newproductreq-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $newproductreq-spacing;
+    }
+  }
+  .newproductreq-main2 {
+    .vc-collapse.active .v-collapse-toggler:after {
+      content: '\f106';
+    }
+    .v-collapse-toggler:after {
+      content: '\f107';
+      color: #886416;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+      font-family: FontAwesome;
+      font-size: 25px;
+      line-height: normal;
+    }
+
+    .v-collapse-content {
+      max-height: 0;
+      transition: max-height 1.2s ease-out;
+      overflow: hidden;
+      padding: 0;
+    }
+    .v-collapse-content-end {
+      transition: max-height 1.2s ease-in;
+      max-height: 2000px;
+      width: 100%;
+    }
+    .button-error {
+      color: #ea6978;
+    }
+
+    .input-extra-text {
+      color: #827878;
+      font-size: 12px;
+      line-height: normal;
+      margin-top: 5px;
+      font-family: VisbyCF-ExtraBold;
+    }
+
+    #quantity_per {
+      text-transform: none;
+    }
+  }
+
+  .accordian-div {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $newproductreqacc-spacing;
+    }
+    .accordion-title {
+      color: #886416;
+      font-family: VisbyCF-ExtraBold;
+      cursor: pointer;
+      text-transform: uppercase;
+      @media (max-width: 767px) {
+        display: inline;
+        font-size: 15px;
+      }
+    }
+    .checkbox-container {
+      margin-bottom: 15px;
+    }
+  }
+
+  .accordian-div4 hr {
+    border-top: 2px solid #c8c3bf;
+  }
+  hr {
+    margin: 0;
+    border-top: 2px solid #fff;
+  }
+
+  .accordian-div4 .nutritional-extra .input-label label {
+    @media (min-width: 1200px) and (max-width: 1760px) {
+      height: 42px;
+    }
+  }
+}
+
+

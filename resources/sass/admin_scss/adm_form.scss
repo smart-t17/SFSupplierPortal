@@ -1,0 +1,50 @@
+.adm-ts-edit-vendor {
+  .w80 {
+    width: 80%
+  }
+  .w20 {
+    width: 20%
+  }
+  .file-attachement .fa-plus {
+    padding: 10px;
+  }
+}
+
+
+.adm-form-main {
+  .datatable-action-btn {
+    cursor: pointer;
+    background: #fff;
+    float: right;
+    padding: 6px 22px;
+    color: #6c757d;
+    font-family: visbyCF-DemiBold;
+    font-size: 15px;
+    margin-left: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    a {
+      cursor: pointer;
+      line-height: normal;
+    }
+    label {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-top: 15px;
+      padding: 6px 22px 6px 22px;
+    }
+  }
+
+  .file-input .input-textbox-div .file-attachement {
+    background: #7a7c7f;
+    .fa {
+      font-size: 24px;
+      padding: 7px;
+    }
+  }
+
+
+}

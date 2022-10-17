@@ -1,0 +1,8 @@
+.scanbackform-div {
+  .scanbackform-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $scanbackform-spacing;
+    }
+  }
+}

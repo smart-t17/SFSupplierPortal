@@ -1,0 +1,50 @@
+
+.menu {
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #222;
+  background: #333;
+  padding: 16px 0px;
+  transition: all 0.4s ease;
+}
+.menu a {
+  display: block;
+}
+.menu a:first-of-type {
+  margin-top: 48px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: -350px;
+}
+.menu-toggle-btn.on + .menu {
+  left: 0;
+}
+
+.menu-toggle-btn {
+  position: relative;
+  z-index: 2;
+}
+.menu-toggle-btn span {
+  position: relative;
+}
+
+.menu-toggle-btn span:first-child {
+  //display: inline-block;
+  top: -15px;
+  line-height: 8px;
+  font-size: 48px;
+}
+.menu-toggle-btn span:last-child {
+  display: none;
+}
+
+.menu-toggle-btn.on span:first-child {
+  display: none;
+}
+.menu-toggle-btn.on span:last-child {
+  display: inline-block;
+  font-size: 32px;
+}

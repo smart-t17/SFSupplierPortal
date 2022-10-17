@@ -1,0 +1,53 @@
+.main-content {
+  .adm-sentntfcn-div {
+    .adm-sentntfcn-main {
+      .datatable .VueTables .row:first-child, .datatable .VueTables .table-responsive {
+        padding: 0;
+      }
+      .VueTables__search {
+        margin-bottom: 35px;
+      }
+
+      @media (min-width: 1200px) {
+        padding: $sent-notification-spacing;
+      }
+      .brown-heading-cl {
+        background-color: $themecolor;
+        color: $white;
+      }
+      .VueTables__table {
+        width: 100%;
+        /*td {
+          padding: 9px 8px;
+        }
+        thead {
+          font-family: VisbyCF-ExtraBold;
+          font-size: 14px;
+        }*/
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            border-bottom: none;
+            &:nth-of-type(even) {
+              background-color: #f1f0ee;
+            }
+            td {
+              font-size: 14px;
+              &:nth-child(1) { width: 10%; }
+              &:nth-child(2) { width: 15%; }
+              &:nth-child(3) { width: 33%; }
+              &:nth-child(4) { width: 15%; }
+              &:nth-child(5) { width: 15%; }
+              &:nth-child(6) { width: 12%; }
+
+              &:first-child {
+                font-family: VisbyCF-Medium
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

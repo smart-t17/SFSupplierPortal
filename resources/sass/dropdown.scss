@@ -1,0 +1,69 @@
+.dropdwn-label {
+  text-transform: capitalize;
+  font-family: VisbyCF-ExtraBold;
+  font-size: 13.5px;
+  label {
+    margin-bottom: 7px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
+.v-select {
+  .dropdown-toggle{
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    .vs__selected-options{
+      background: #fff;
+      input[type=search] {
+        height: 38px !important;
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    .clear { display: none; }
+  }
+  .selected-tag {
+    margin: 0 !important;
+    color: #886416 !important;
+    font-weight: bold;
+  }
+  .dropdown-menu {
+    border-radius: 0 !important;
+    padding: 0 !important;
+    >.highlight>a {
+      background-color: $themecolor !important;
+    }
+  }
+  .vs__actions{
+    padding: 0 !important;
+  }
+  .open-indicator {
+    background: #00000033 !important;
+    width: 22px !important;
+    &:before {
+      border-color: #fff !important;
+      margin: 6px !important;
+      margin-top: 10px !important;
+      border-top: 0.5em solid #fff !important;
+      border-right: 0.3em solid transparent !important;
+      border-bottom: 0 !important;
+      border-left: 0.3em solid transparent !important;
+      //transform: reset;
+      transform: initial !important;
+    }
+  }
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+.v-select.single.open .selected-tag { position: static !important; }
+
+.dropdwn .form-control::placeholder {
+  //color: rgb(213, 202, 191);
+  color: #c8c3bf;
+  font-size: 14px;
+  font-family: VisbyCF-DemiBold;
+}

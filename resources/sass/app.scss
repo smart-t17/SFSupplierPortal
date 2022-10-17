@@ -1,0 +1,90 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel { background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);}
+
+body {
+  margin: 0;
+  color: $font-color;
+  font-size: 16px;
+  font-family: VisbyCF-Medium;
+  letter-spacing: $letter-spacing;
+  background-color: $gray-color;
+}
+p { margin-bottom: 0; }
+a:hover { text-decoration: none; }
+.p-relative { position: relative; }
+
+@import 'general.scss';
+@import 'spacing.scss';
+@import 'titles.scss';
+@import 'searchbox.scss';
+@import 'login.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'dropdown.scss';
+@import 'textbox.scss';
+@import 'button.scss';
+@import 'checkbox.scss';
+@import 'alert.scss';
+@import 'attachment_block.scss';
+@import 'reset_password.scss';
+@import 'dashboard.scss';
+@import 'contact_us.scss';
+@import 'monthly_library.scss';
+@import 'monthly_form.scss';
+@import 'pricing_guide.scss';
+@import 'annual_catalogue_form.scss';
+@import 'tradeshow_form.scss';
+@import 'scan_back_form.scss';
+@import 'new_product_request.scss';
+@import 'textarea.scss';
+@import 'mysubmissions.scss';
+@import 'drafts.scss';
+@import 'datatable.scss';
+@import 'my_products.scss';
+@import 'tradeshow_customers.scss';
+@import 'share_modal.scss';
+@import 'input_file.scss';
+@import 'my_profile.scss';
+
+
+// Admin panel
+@import 'admin_scss/price_guide.scss';
+@import 'admin_scss/sent_notification.scss';
+@import 'admin_scss/submission_list.scss';
+@import 'admin_scss/vendors_new_request.scss';
+@import 'admin_scss/product_edit_request.scss';
+@import 'admin_scss/new_product_request.scss';
+@import 'admin_scss/sb_submission_declined.scss';
+@import 'admin_scss/sb_submission_approved.scss';
+@import 'admin_scss/product_space_submission_list.scss';
+@import 'admin_scss/customer_registration_list.scss';
+@import 'admin_scss/customer_attendees.scss';
+@import 'admin_scss/vendor_submission_list.scss';
+@import 'admin_scss/unverified_customers.scss';
+@import 'admin_scss/tradeshow_events.scss';
+@import 'admin_scss/ac_submission_list.scss';
+@import 'admin_scss/sb_submission_list.scss';
+@import 'admin_scss/ps_send_notification.scss';
+@import 'admin_scss/ts_send_notification.scss';
+@import 'admin_scss/vendor_list.scss';
+@import 'admin_scss/datatable_form.scss';
+@import 'admin_scss/adm_form.scss';
+@import 'admin_scss/adm_header.scss';
+@import 'admin_scss/product_submission.scss';
+@import 'admin_scss/user_list.scss';
+@import 'admin_scss/permission.scss';
+@import 'admin_scss/product_presentation.scss';
+@import 'admin_scss/product_presentation_request.scss';
+@import 'admin_scss/product_presentation_edit.scss';
+@import 'admin_scss/add_modal.scss';

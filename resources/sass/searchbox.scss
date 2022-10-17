@@ -1,0 +1,30 @@
+/* Search Box */
+.searchbox {
+
+  .searchbox-input {
+    //box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    padding-left: 40px;
+    border: none;
+    &:focus {
+      border: none;
+    }
+  }
+
+  .form-control-search {
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+    color: #acadaf;
+  }
+}
+
+/* Search Box End */

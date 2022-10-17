@@ -1,0 +1,8 @@
+.ac-form-div {
+  .ac-form-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $ac-form-spacing;
+    }
+  }
+}

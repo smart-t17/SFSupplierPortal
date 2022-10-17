@@ -1,0 +1,17 @@
+.myprofile-div {
+  .myprofile-main {
+    @media(min-width: 1200px) {
+      padding: $myprofile-spacing;
+    }
+    .upload-btn-wrapper {
+      .file-attachement {
+        background: #fff;
+        color: #787a7d;
+        .fa {
+          font-size: 24px;
+          padding: 7px;
+        }
+      }
+    }
+  }
+}

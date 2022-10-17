@@ -1,0 +1,99 @@
+.main-content{
+  .box{
+    @media(max-width: 767px){
+      padding-bottom: 15px;
+    }
+    .home-box {
+      color: #FFF;
+      height: 200px;
+      margin-bottom: 50px;
+      position: relative;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      img {
+        height: 90px;
+        padding-bottom: 10px;
+      }
+      @media(max-width: 767px) {
+        margin-bottom: 15px;
+      }
+      #notifications-count {
+        position: absolute;
+        top: 9px;
+        right: 3px;
+        height: 25px;
+        width: 25px;
+        overflow: hidden;
+        background: #f37451;
+        color: #FFF;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 23px;
+      }
+    }
+    .containbox {
+      position: absolute;
+      transform: translateX(-50%) translatey(-50%);
+      left: 50%;
+      top: 58%;
+      width: 100%;
+      span {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: VisbyCF-ExtraBold;
+        @media(max-width: 992px){ font-size: 16px; }
+      }
+    }
+    .h-b-1 {
+      background-color: $green-theme;
+    }
+    .h-b-2 {
+      background-color: $pink-theme;
+    }
+    .h-b-3 {
+      background-color: $sky-theme;
+    }
+    .h-b-4 {
+      background-color: $orange-theme;
+    }
+    .h-b-5 {
+      background-color: $yellow-theme;
+    }
+    .h-b-6 {
+      background-color: $purple-theme;
+    }
+
+    /* Admin Panel */
+    .h-b-7 {
+      background-color: $vendor-theme;
+    }
+    .h-b-8 {
+      background-color: $notification-theme;
+    }
+    .h-b-9 {
+      background-color: $pricing-theme;
+    }
+    .notfcation .containbox-img {
+      max-width: 75px;
+      margin: auto;
+      position: relative;
+    }
+    /* Admin Panel */
+
+
+  }
+}
+.landing-div {
+  @media (min-width: 992px) {
+    padding: 130px 100px 130px;
+  }
+  @media(max-width: 1200px) {
+    padding: 40px 0;
+  }
+
+}

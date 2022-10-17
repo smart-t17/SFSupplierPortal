@@ -1,0 +1,110 @@
+.main-content {
+  .pricingguide-div {
+    .pricingguide-main {
+      background-color: #fff;
+      @media (min-width: 1200px) {
+        padding: $pricing-spacing;
+      }
+      .green-cl {
+        background-color: #edf6eb;
+        color: $green-theme;
+      }
+      .pink-cl {
+        background-color: #fdecec;
+        color: $pink-theme;
+      }
+      .sky-cl {
+        background-color: #e5f1f5;
+        color: $sky-theme;
+      }
+      tbody {
+        letter-spacing: 0px;
+      }
+      .pricing-table {
+        width: 100%;
+        td {
+          padding: 4px 8px;
+        }
+        thead {
+          font-family: VisbyCF-ExtraBold;
+          font-size: 18px;
+        }
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            td {
+              &:first-child {
+                font-family: VisbyCF-DemiBold
+              }
+              &:last-child {
+                font-family: VisbyCF-DemiBold
+              }
+            }
+          }
+        }
+      }
+      .monthly-table {
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            td {
+              &:first-child {
+                width: 20%;
+              }
+              &:nth-child(2) {
+                width: 70%;
+              }
+              &:nth-child(3) {
+                width: 10%;
+              }
+            }
+          }
+        }
+      }
+      .tradeshow-table {
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            td {
+              &:first-child {
+                width: 15%;
+              }
+              &:nth-child(2) {
+                width: 20%;
+              }
+              &:nth-child(3) {
+                width: 15%;
+              }
+              &:nth-child(4) {
+                width: 40%;
+              }
+              &:nth-child(5) {
+                width: 10%;
+              }
+            }
+          }
+        }
+      }
+      .annual-table {
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            td {
+              &:first-child {
+                width: 45%;
+              }
+              &:nth-child(2) {
+                //width: 70%;
+                width: 45%;
+              }
+              &:nth-child(3) {
+                width: 10%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

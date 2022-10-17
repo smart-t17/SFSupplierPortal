@@ -1,0 +1,30 @@
+.drafts-div {
+  .drafts-main {
+    background: $gray-color;
+    @media(min-width: 1200px) {
+      padding: $drafts-spacing;
+    }
+
+    .datatable .action-btn .fa-times {
+      color: #fff;
+      font-size: 14px;
+    }
+    .datatable {
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: transparent;
+      }
+      .VueTables__table tr td:nth-child(1) {
+        width: 65%
+      }
+      .VueTables__table tr td:nth-child(2) {
+        width: 20%
+      }
+      .VueTables__table tr td:nth-child(3) {
+        width: 15%
+      }
+      .action-btn .fa-share {
+        margin-left: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.input-label {
+  text-transform: capitalize;
+  font-family: VisbyCF-ExtraBold;
+  font-size: 13.5px;
+  label {
+    margin-bottom: 7px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 15px;
+  }
+}
+.input-textbox {
+  background: #fff;
+  width: 100%;
+  border: none;
+  height: 38px !important;
+  padding: 0 6px;
+  color: #886416;
+  font-weight: bold;
+  &:focus{ outline: none; }
+  &::-webkit-input-placeholder {
+    color: #c8c3bf;
+    font-size: 14px;
+  }
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c8c3bf;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c8c3bf;
+    font-size: 14px;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c8c3bf;
+    font-size: 14px;
+  }
+
+}
+

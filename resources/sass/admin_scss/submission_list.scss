@@ -1,0 +1,45 @@
+.main-content {
+  .adm-submission-list-div {
+    .adm-submission-list-main {
+      .datatable .VueTables .row:first-child, .datatable .VueTables .table-responsive {
+        padding: 0;
+      }
+      .VueTables__search {
+        margin-bottom: 35px;
+        .VueTables__search-field { opacity: 0; }
+      }
+
+      @media (min-width: 1200px) {
+        padding: $sent-notification-spacing;
+      }
+      .brown-heading-cl {
+        background-color: $themecolor;
+        color: $white;
+      }
+      .VueTables__table {
+        width: 100%;
+        tbody {
+          letter-spacing: 0px;
+          tr {
+            border-bottom: none;
+            &:nth-of-type(even) {
+              background-color: #f1f0ee;
+            }
+            td {
+              font-size: 14px;
+              &:nth-child(1) {     width: 5%; }
+              &:nth-child(2) {     width: 12%; }
+              &:nth-child(3) {     width: 15%; }
+              &:nth-child(4) {     width: 68%; }
+
+              &:first-child {
+                font-family: VisbyCF-Medium
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
